@@ -513,23 +513,10 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
   m_PrefabInternal: {fileID: 71474176}
---- !u!114 &71474179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 71474178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultGazeDistance: 2
-  PlaceParentOnTap: 1
-  ParentGameObjectToPlace: {fileID: 0}
-  IsBeingPlaced: 0
-  AllowMeshVisualizationControl: 1
-  UseColliderCenter: 0
+--- !u!1 &71474179 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
+  m_PrefabInternal: {fileID: 71474176}
 --- !u!114 &71474180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,12 +537,49 @@ MonoBehaviour:
   SmoothPositionLerpRatio: 0.5
   SmoothRotationLerpRatio: 0.5
   SmoothScaleLerpRatio: 0.5
---- !u!64 &71474181
+--- !u!114 &71474181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 71474179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultGazeDistance: 0.5
+  PlaceParentOnTap: 1
+  ParentGameObjectToPlace: {fileID: 0}
+  IsBeingPlaced: 0
+  AllowMeshVisualizationControl: 1
+  UseColliderCenter: 0
+--- !u!114 &71474182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 71474179}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseUnscaledTime: 1
+  PositionPerSecond: 30
+  RotationDegreesPerSecond: 720
+  RotationSpeedScaler: 0
+  ScalePerSecond: 5
+  SmoothLerpToTarget: 0
+  SmoothPositionLerpRatio: 0.5
+  SmoothRotationLerpRatio: 0.5
+  SmoothScaleLerpRatio: 0.5
+--- !u!64 &71474183
 MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 71474178}
+  m_GameObject: {fileID: 71474179}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -563,7 +587,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
 --- !u!1001 &100304569
 Prefab:
   m_ObjectHideFlags: 0
@@ -1158,7 +1182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultGazeDistance: 2
-  PlaceParentOnTap: 1
+  PlaceParentOnTap: 0
   ParentGameObjectToPlace: {fileID: 0}
   IsBeingPlaced: 0
   AllowMeshVisualizationControl: 1
@@ -1365,7 +1389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultGazeDistance: 2
-  PlaceParentOnTap: 1
+  PlaceParentOnTap: 0
   ParentGameObjectToPlace: {fileID: 0}
   IsBeingPlaced: 0
   AllowMeshVisualizationControl: 1
@@ -1814,23 +1838,10 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
   m_PrefabInternal: {fileID: 645063080}
---- !u!114 &645063083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 645063082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultGazeDistance: 2
-  PlaceParentOnTap: 1
-  ParentGameObjectToPlace: {fileID: 0}
-  IsBeingPlaced: 0
-  AllowMeshVisualizationControl: 1
-  UseColliderCenter: 0
+--- !u!1 &645063083 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
+  m_PrefabInternal: {fileID: 645063080}
 --- !u!114 &645063084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,12 +1862,49 @@ MonoBehaviour:
   SmoothPositionLerpRatio: 0.5
   SmoothRotationLerpRatio: 0.5
   SmoothScaleLerpRatio: 0.5
---- !u!64 &645063085
+--- !u!114 &645063085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645063083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultGazeDistance: 0.5
+  PlaceParentOnTap: 1
+  ParentGameObjectToPlace: {fileID: 0}
+  IsBeingPlaced: 0
+  AllowMeshVisualizationControl: 1
+  UseColliderCenter: 0
+--- !u!114 &645063086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645063083}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseUnscaledTime: 1
+  PositionPerSecond: 30
+  RotationDegreesPerSecond: 720
+  RotationSpeedScaler: 0
+  ScalePerSecond: 5
+  SmoothLerpToTarget: 0
+  SmoothPositionLerpRatio: 0.5
+  SmoothRotationLerpRatio: 0.5
+  SmoothScaleLerpRatio: 0.5
+--- !u!64 &645063087
 MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 645063082}
+  m_GameObject: {fileID: 645063083}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -1864,7 +1912,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
 --- !u!1 &682997377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,23 +2430,10 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
   m_PrefabInternal: {fileID: 747428250}
---- !u!114 &747428253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 747428252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultGazeDistance: 2
-  PlaceParentOnTap: 1
-  ParentGameObjectToPlace: {fileID: 0}
-  IsBeingPlaced: 0
-  AllowMeshVisualizationControl: 1
-  UseColliderCenter: 0
+--- !u!1 &747428253 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
+  m_PrefabInternal: {fileID: 747428250}
 --- !u!114 &747428254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2419,12 +2454,49 @@ MonoBehaviour:
   SmoothPositionLerpRatio: 0.5
   SmoothRotationLerpRatio: 0.5
   SmoothScaleLerpRatio: 0.5
---- !u!64 &747428255
+--- !u!114 &747428255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747428253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultGazeDistance: 0.5
+  PlaceParentOnTap: 1
+  ParentGameObjectToPlace: {fileID: 0}
+  IsBeingPlaced: 0
+  AllowMeshVisualizationControl: 1
+  UseColliderCenter: 0
+--- !u!114 &747428256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747428253}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseUnscaledTime: 1
+  PositionPerSecond: 30
+  RotationDegreesPerSecond: 720
+  RotationSpeedScaler: 0
+  ScalePerSecond: 5
+  SmoothLerpToTarget: 0
+  SmoothPositionLerpRatio: 0.5
+  SmoothRotationLerpRatio: 0.5
+  SmoothScaleLerpRatio: 0.5
+--- !u!64 &747428257
 MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 747428252}
+  m_GameObject: {fileID: 747428253}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -2432,7 +2504,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
 --- !u!1 &779804802
 GameObject:
   m_ObjectHideFlags: 0
