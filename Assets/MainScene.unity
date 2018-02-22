@@ -502,6 +502,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2.8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
+      propertyPath: m_Name
+      value: lavalamp Center
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
   m_IsPrefabParent: 0
@@ -509,34 +513,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
   m_PrefabInternal: {fileID: 71474176}
---- !u!1 &71474178 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
-  m_PrefabInternal: {fileID: 71474176}
 --- !u!1 &71474179 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
   m_PrefabInternal: {fileID: 71474176}
---- !u!114 &71474180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 71474178}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
-  RotationSpeedScaler: 0
-  ScalePerSecond: 5
-  SmoothLerpToTarget: 0
-  SmoothPositionLerpRatio: 0.5
-  SmoothRotationLerpRatio: 0.5
-  SmoothScaleLerpRatio: 0.5
 --- !u!114 &71474181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,30 +530,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HostTransform: {fileID: 71474177}
   DistanceScale: 2
-  RotationMode: 0
+  RotationMode: 1
   PositionLerpSpeed: 0.2
   RotationLerpSpeed: 0.2
   IsDraggingEnabled: 1
---- !u!114 &71474182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 71474179}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
-  RotationSpeedScaler: 0
-  ScalePerSecond: 5
-  SmoothLerpToTarget: 0
-  SmoothPositionLerpRatio: 0.5
-  SmoothRotationLerpRatio: 0.5
-  SmoothScaleLerpRatio: 0.5
 --- !u!64 &71474183
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1095,7 +1055,6 @@ GameObject:
   - component: {fileID: 437926044}
   - component: {fileID: 437926043}
   - component: {fileID: 437926042}
-  - component: {fileID: 437926046}
   - component: {fileID: 437926045}
   m_Layer: 0
   m_Name: Album
@@ -1183,30 +1142,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HostTransform: {fileID: 0}
   DistanceScale: 2
-  RotationMode: 0
+  RotationMode: 1
   PositionLerpSpeed: 0.2
   RotationLerpSpeed: 0.2
   IsDraggingEnabled: 1
---- !u!114 &437926046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 437926040}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
-  RotationSpeedScaler: 0
-  ScalePerSecond: 5
-  SmoothLerpToTarget: 0
-  SmoothPositionLerpRatio: 0.5
-  SmoothRotationLerpRatio: 0.5
-  SmoothScaleLerpRatio: 0.5
 --- !u!1 &439158698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,8 +1241,8 @@ GameObject:
   - component: {fileID: 483317953}
   - component: {fileID: 483317952}
   - component: {fileID: 483317951}
-  - component: {fileID: 483317955}
   - component: {fileID: 483317954}
+  - component: {fileID: 483317955}
   m_Layer: 0
   m_Name: Album
   m_TagString: Untagged
@@ -1390,30 +1329,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HostTransform: {fileID: 0}
   DistanceScale: 2
-  RotationMode: 0
+  RotationMode: 1
   PositionLerpSpeed: 0.2
   RotationLerpSpeed: 0.2
   IsDraggingEnabled: 1
---- !u!114 &483317955
-MonoBehaviour:
+--- !u!54 &483317955
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 483317949}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
-  RotationSpeedScaler: 0
-  ScalePerSecond: 5
-  SmoothLerpToTarget: 0
-  SmoothPositionLerpRatio: 0.5
-  SmoothRotationLerpRatio: 0.5
-  SmoothScaleLerpRatio: 0.5
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &498192313
 Prefab:
   m_ObjectHideFlags: 0
@@ -1785,7 +1719,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.085
+      value: 1.578
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1825,7 +1759,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
       propertyPath: m_Name
-      value: lavalamp
+      value: lavalamp Right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
@@ -1842,26 +1776,21 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
   m_PrefabInternal: {fileID: 645063080}
---- !u!114 &645063084
-MonoBehaviour:
+--- !u!54 &645063084
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 645063082}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
-  RotationSpeedScaler: 0
-  ScalePerSecond: 5
-  SmoothLerpToTarget: 0
-  SmoothPositionLerpRatio: 0.5
-  SmoothRotationLerpRatio: 0.5
-  SmoothScaleLerpRatio: 0.5
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &645063085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1870,35 +1799,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 645063083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d5a0a60fbe897549ad0bfe2039f12b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultGazeDistance: 0.5
-  PlaceParentOnTap: 1
-  ParentGameObjectToPlace: {fileID: 0}
-  IsBeingPlaced: 0
-  AllowMeshVisualizationControl: 1
-  UseColliderCenter: 0
---- !u!114 &645063086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 645063083}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
-  RotationSpeedScaler: 0
-  ScalePerSecond: 5
-  SmoothLerpToTarget: 0
-  SmoothPositionLerpRatio: 0.5
-  SmoothRotationLerpRatio: 0.5
-  SmoothScaleLerpRatio: 0.5
+  HostTransform: {fileID: 645063081}
+  DistanceScale: 2
+  RotationMode: 1
+  PositionLerpSpeed: 0.2
+  RotationLerpSpeed: 0.2
+  IsDraggingEnabled: 1
 --- !u!64 &645063087
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2417,7 +2326,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
       propertyPath: m_Name
-      value: lavalamp
+      value: lavalamp Left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
@@ -2426,34 +2335,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
   m_PrefabInternal: {fileID: 747428250}
---- !u!1 &747428252 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
-  m_PrefabInternal: {fileID: 747428250}
 --- !u!1 &747428253 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: 3b38d77ae0e1b0c448fd6d5adfb002d6, type: 3}
   m_PrefabInternal: {fileID: 747428250}
---- !u!114 &747428254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 747428252}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
-  RotationSpeedScaler: 0
-  ScalePerSecond: 5
-  SmoothLerpToTarget: 0
-  SmoothPositionLerpRatio: 0.5
-  SmoothRotationLerpRatio: 0.5
-  SmoothScaleLerpRatio: 0.5
 --- !u!114 &747428255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2462,35 +2347,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 747428253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d5a0a60fbe897549ad0bfe2039f12b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultGazeDistance: 0.5
-  PlaceParentOnTap: 1
-  ParentGameObjectToPlace: {fileID: 0}
-  IsBeingPlaced: 0
-  AllowMeshVisualizationControl: 1
-  UseColliderCenter: 0
---- !u!114 &747428256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 747428253}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
-  RotationSpeedScaler: 0
-  ScalePerSecond: 5
-  SmoothLerpToTarget: 0
-  SmoothPositionLerpRatio: 0.5
-  SmoothRotationLerpRatio: 0.5
-  SmoothScaleLerpRatio: 0.5
+  HostTransform: {fileID: 747428251}
+  DistanceScale: 2
+  RotationMode: 1
+  PositionLerpSpeed: 0.2
+  RotationLerpSpeed: 0.2
+  IsDraggingEnabled: 1
 --- !u!64 &747428257
 MeshCollider:
   m_ObjectHideFlags: 0
