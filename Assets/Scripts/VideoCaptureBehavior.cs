@@ -47,7 +47,7 @@ public class VideoCaptureBehavior : MonoBehaviour
                 Debug.Log("Created VideoCapture Instance!");
 
                 CameraParameters cameraParameters = new CameraParameters();
-                cameraParameters.hologramOpacity = 0.0f;
+                cameraParameters.hologramOpacity = 0.5f;
                 cameraParameters.frameRate = cameraFramerate;
                 cameraParameters.cameraResolutionWidth = cameraResolution.width;
                 cameraParameters.cameraResolutionHeight = cameraResolution.height;
