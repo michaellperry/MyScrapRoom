@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyScrapRoom", "MyScrapRoom.csproj", "{6D54DAC0-7BA0-0F03-2754-41792EEDD07F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyScrapRoom.Editor", "MyScrapRoom.Editor.csproj", "{529C169D-1C8C-1E5F-F5AB-94EDB56077CB}"
